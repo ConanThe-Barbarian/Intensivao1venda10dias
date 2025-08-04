@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intensivão de Vendas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+    :root {
+      --cor-principal: #b30000;
+      --cor-hover: #8b0000;
+      --cor-titulo: #ff4c4c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #111;
+      color: #f0f0f0;
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('AAA.webp') no-repeat center center;
+      background-size: cover;
+      padding: 120px 30px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    header h1,
+    header p,
+    header .btn {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 15px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .btn {
+      background-color: var(--cor-principal);
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 25px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-weight: bold;
+      animation: pulse 2s infinite;
+    }
+
+    .btn:hover {
+      background-color: var(--cor-hover);
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--cor-titulo);
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .topico {
+      margin-bottom: 40px;
+      border-left: 4px solid var(--cor-principal);
+      padding-left: 20px;
+      background-color: #1a1a1a;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: '✓';
+      color: var(--cor-principal);
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: #0b0b0b;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9em;
+      color: #999;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="overlay"></div>
+  <h1 data-aos="fade-down">INTENSIVÃO DE VENDAS: DOMINE O MERCADO E AUMENTE SEUS RESULTADOS!</h1>
+  <p data-aos="fade-up">Você está pronto para revolucionar suas vendas e alcançar o sucesso que sempre quis?</p>
+  <a href="#inscricao" class="btn">Quero me inscrever</a>
+</header>
+
+<section data-aos="fade-up">
+  <h2>Assista ao vídeo explicativo</h2>
+  <div class="video-container">
+    <iframe src="https://drive.google.com/file/d/1hmIwa4vqVPCXPe5wGWjj_3lWPbd9rKwa/preview" allow="autoplay" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section data-aos="fade-up">
+  <h2>Aprenda com os melhores!</h2>
+  <div class="topico">
+    <h3>1. Captação de Clientes</h3>
+    <p>Descubra como atrair uma avalanche de contatos qualificados em menos de 48 horas usando estratégias de prospecção ativa e inteligente.</p>
+  </div>
+  <div class="topico">
+    <h3>2. Scripts de Alta Conversão</h3>
+    <p>Utilize roteiros testados para converter até os clientes mais indecisos. Linguagem emocional, escuta ativa e gatilhos mentais na medida certa.</p>
+  </div>
+  <div class="topico">
+    <h3>3. Atendimento Presencial</h3>
+    <p>Torne cada visita uma oportunidade real de fechamento. Saiba como gerar empatia, autoridade e controle da conversa em minutos.</p>
+  </div>
+  <div class="topico">
+    <h3>4. Fechamento de Vendas</h3>
+    <p>Construa um processo de fechamento irresistível. Deixe o "vou pensar" para trás e domine a arte de conduzir o cliente até o "sim".</p>
+  </div>
+  <div class="topico">
+    <h3>5. Regularização de Nome</h3>
+    <p>Aprenda como ajudar clientes com nome sujo a retomarem a credibilidade financeira e torná-los aptos para compra imediata.</p>
+  </div>
+  <div class="topico">
+    <h3>6. Crédito Imobiliário</h3>
+    <p>Entenda rating, Bacen, renda informal e use essas informações para alavancar aprovações em financiamentos e vendas de alto valor.</p>
+  </div>
+</section>
+
+<section data-aos="fade-up">
+  <h2>Não perca essa oportunidade!</h2>
+  <ul>
+    <li>Aumentar suas vendas de forma consistente</li>
+    <li>Desenvolver habilidades de negociação e fechamento</li>
+    <li>Conquistar mais clientes e expandir seu negócio</li>
+  </ul>
+</section>
+
+<section id="inscricao" data-aos="fade-up">
+  <h2>Reserve sua vaga!</h2>
+  <p>Inscreva-se agora e domine o mercado!</p>
+  <a href="https://wa.me/5521975333397?text=Tenho%20interesse%20no%20Intensiv%C3%A3o%20de%20Vendas!" class="btn">Inscreva-se agora</a>
+</section>
+
+<footer>
+  &copy; 2025 Intensivão de Vendas. Todos os direitos reservados.
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
