@@ -4,135 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intensivão de Vendas</title>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
+      background-color: #111;
       color: #f0f0f0;
-      line-height: 1.6;
     }
-
     header.hero {
-      background: url('AAA.webp') no-repeat center center/cover;
-      padding: 100px 20px;
+      background: url('AAA.webp') no-repeat center center;
+      background-size: cover;
+      padding: 100px 30px;
       text-align: center;
+      color: #ffffff;
       position: relative;
+      overflow: hidden;
     }
-
     .hero .overlay {
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
       z-index: 1;
     }
-
-    .hero h1, .hero p, .hero .btn {
+    .hero h1,
+    .hero p,
+    .hero .btn {
       position: relative;
       z-index: 2;
     }
-
-    header h1 {
-      font-size: 2.2em;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 4px #000;
-    }
-
-    header p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-
     .btn {
       background-color: #ff6600;
       color: #fff;
       padding: 15px 30px;
       text-decoration: none;
       border-radius: 5px;
-      font-weight: bold;
-      transition: 0.3s;
       display: inline-block;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
     }
-
     .btn:hover {
-      background-color: #ff8533;
+      background-color: #E65100;
+      color: #fff;
     }
-
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
     section {
-      padding: 60px 20px;
+      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
-
     h2 {
       color: #ff6600;
-      margin-bottom: 20px;
-      font-size: 1.8em;
       text-align: center;
     }
-
     .topico {
       margin-bottom: 30px;
+      background-color: #1c1c1c;
       padding: 20px;
-      background-color: #1f1f1f;
-      border-left: 5px solid #ff6600;
-      border-radius: 5px;
+      border-left: 4px solid #ff6600;
+      border-radius: 8px;
     }
-
     .topico h3 {
-      color: #ffffff;
-      font-size: 1.3em;
-      margin-bottom: 10px;
-    }
-
-    .topico p {
-      font-size: 1em;
-      color: #ccc;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 20px;
-    }
-
-    ul li::before {
-      content: '✓';
       color: #ff6600;
-      margin-right: 10px;
     }
-
     .video-container {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255, 102, 0, 0.2);
+      margin-top: 30px;
+      box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
     }
-
     .video-container iframe {
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
+      border: none;
     }
-
     footer {
       background-color: #000;
       text-align: center;
       padding: 20px;
-      color: #888;
       font-size: 0.9em;
+      color: #888;
     }
-
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: '✓';
+      color: #ff6600;
+      margin-right: 10px;
+    }
+    #inscricao {
+      text-align: center;
+    }
     @media (max-width: 768px) {
+      header.hero {
+        padding: 60px 20px;
+      }
       header h1 {
         font-size: 1.6em;
       }
@@ -140,20 +120,8 @@
         font-size: 1em;
       }
       .btn {
-        padding: 12px 20px;
-        font-size: 0.9em;
-      }
-      section {
-        padding: 40px 15px;
-      }
-      h2 {
-        font-size: 1.5em;
-      }
-      .topico h3 {
-        font-size: 1.1em;
-      }
-      .topico p {
-        font-size: 0.95em;
+        padding: 12px 25px;
+        font-size: 1em;
       }
     }
   </style>
@@ -162,53 +130,49 @@
 
 <header class="hero">
   <div class="overlay"></div>
-  <h1 data-aos="fade-up">INTENSIVÃO DE VENDAS: DOMINE O MERCADO E AUMENTE SEUS RESULTADOS!</h1>
-  <p data-aos="fade-up" data-aos-delay="200">Você está pronto para revolucionar suas vendas e alcançar o sucesso que sempre quis?</p>
-  <a href="#inscricao" class="btn" data-aos="zoom-in" data-aos-delay="400">Quero me inscrever</a>
+  <h1>INTENSIVÃO DE VENDAS: DOMINE O MERCADO E AUMENTE SEUS RESULTADOS!</h1>
+  <p>Você está pronto para revolucionar suas vendas e alcançar o sucesso que sempre quis?</p>
+  <div style="text-align: center;">
+    <a href="#inscricao" class="btn">Quero me inscrever</a>
+  </div>
 </header>
 
-<section>
-  <h2 data-aos="fade-up">Assista ao vídeo explicativo</h2>
-  <div class="video-container" data-aos="zoom-in">
-    <iframe src="https://drive.google.com/file/d/1hmIwa4vqVPCXPe5wGWjj_3lWPbd9rKwa/preview" allow="autoplay" allowfullscreen></iframe>
+<section data-aos="fade-up">
+  <h2>Assista ao vídeo explicativo</h2>
+  <div class="video-container">
+    <iframe src="https://drive.google.com/file/d/1hmIwa4vqVPCXPe5wGWjj_3lWPbd9rKwa/preview" allowfullscreen></iframe>
   </div>
 </section>
 
-<section>
-  <h2 data-aos="fade-up">Aprenda com os melhores!</h2>
-
-  <div class="topico" data-aos="fade-right">
+<section data-aos="fade-right">
+  <h2>Aprenda com os melhores!</h2>
+  <div class="topico" data-aos="fade-left">
     <h3>1. Captação de Clientes</h3>
-    <p>Você vai aprender técnicas práticas e validadas para atrair uma enxurrada de leads qualificados. Descubra como gerar de 40 a 70 novos clientes em apenas dois dias, mesmo sem experiência prévia!</p>
+    <p>Domine a arte de atrair pessoas interessadas no seu produto ou serviço. Descubra técnicas práticas que vão gerar de 40 a 70 novos clientes em apenas dois dias, mesmo começando do zero.</p>
   </div>
-
-  <div class="topico" data-aos="fade-left">
+  <div class="topico" data-aos="fade-right">
     <h3>2. Scripts de Alta Conversão</h3>
-    <p>Transforme conversas em vendas com roteiros testados que convertem de 10% a 20% dos contatos em atendimentos presenciais. Receba os scripts prontos e adaptáveis para diferentes perfis de cliente.</p>
+    <p>Você terá acesso a frases e abordagens testadas que convertem. Leve entre 10% a 20% dos contatos diretamente para um atendimento presencial com alta chance de fechar.</p>
   </div>
-
-  <div class="topico" data-aos="fade-right">
+  <div class="topico" data-aos="fade-left">
     <h3>3. Atendimento Presencial</h3>
-    <p>Aprenda como conduzir uma reunião presencial de forma estratégica, encantando o cliente desde o primeiro minuto. Técnicas psicológicas e linguagem corporal serão seus aliados para fechar mais.</p>
+    <p>Transforme visitas mornas em vendas reais. Aprenda como criar conexão, gerar autoridade e fechar negócios na hora, mesmo com clientes céticos ou indecisos.</p>
   </div>
-
-  <div class="topico" data-aos="fade-left">
-    <h3>4. Fechamento de Vendas</h3>
-    <p>Chega de ouvir "vou pensar e te aviso". Domine gatilhos mentais, objeções e o momento exato de conduzir o sim do cliente, com confiança e sem pressão.</p>
-  </div>
-
   <div class="topico" data-aos="fade-right">
-    <h3>5. Regularização de Nome</h3>
-    <p>Descubra como transformar clientes com nome negativado em oportunidades reais de venda. Estratégias de renegociação e recuperação de crédito fazem parte do jogo.</p>
+    <h3>4. Fechamento de Vendas</h3>
+    <p>Chega de ouvir "vou pensar". Aprenda gatilhos psicológicos e estratégias para finalizar suas vendas com confiança e consistência.</p>
   </div>
-
   <div class="topico" data-aos="fade-left">
+    <h3>5. Regularização de Nome</h3>
+    <p>Mesmo com nome sujo é possível vender! Descubra como usar estratégias legais e financeiras para regularizar a situação dos seus clientes e aprovar vendas com segurança.</p>
+  </div>
+  <div class="topico" data-aos="fade-right">
     <h3>6. Crédito Imobiliário</h3>
-    <p>Entenda o sistema por trás do crédito no Brasil: como funciona o rating, o BACEN, e como usar renda informal para liberar aprovação. Informações valiosas que te colocam à frente da concorrência.</p>
+    <p>Aprenda o que poucos sabem sobre aprovação de crédito. Entenda como bancos analisam rating, renda formal e informal, e como se antecipar a objeções com propriedade.</p>
   </div>
 </section>
 
-<section data-aos="zoom-in">
+<section data-aos="fade-up">
   <h2>Não perca essa oportunidade!</h2>
   <ul>
     <li>Aumentar suas vendas de forma consistente</li>
@@ -217,10 +181,12 @@
   </ul>
 </section>
 
-<section id="inscricao" data-aos="fade-up">
+<section id="inscricao" data-aos="zoom-in">
   <h2>Reserve sua vaga!</h2>
   <p>Não deixe que a concorrência o ultrapasse. Inscreva-se agora e domine o mercado!</p>
-  <a href="https://wa.me/5521975333397?text=Olá,%20tenho%20interesse%20no%20Intensivão%20de%20Vendas!" class="btn">Inscreva-se agora</a>
+  <div style="text-align: center;">
+    <a href="https://wa.me/5521975333397?text=Olá,%20tenho%20interesse%20no%20Intensivão%20de%20Vendas!" class="btn">Inscreva-se agora</a>
+  </div>
 </section>
 
 <footer>
@@ -230,20 +196,14 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
-
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', function(e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop,
-          behavior: 'smooth'
-        });
-      }
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
     });
   });
 </script>
-
 </body>
 </html>
